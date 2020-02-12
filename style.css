@@ -1,0 +1,30 @@
+body {
+    height: 100;
+    display: flex;
+    /* grid-template-columns: repeat(4, 1fr); */
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+.grid-parent {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        'a'
+        'b'
+        'c';
+
+}
+
+.labels {
+    grid-area: a
+}
+
+.display-total {
+    grid-area: b
+}
+
+.display-total-tip {
+    grid-area: c
+}
